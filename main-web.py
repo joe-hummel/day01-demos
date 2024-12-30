@@ -31,6 +31,10 @@ endpoint = configur.get('webservice', 'endpoint')
 print(">>calling web service...")
 print(endpoint)
 
+print()
+print("TODO")
+print()
+
 #
 # TODO
 #
