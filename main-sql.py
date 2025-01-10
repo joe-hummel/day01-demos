@@ -33,8 +33,12 @@ rds_dbname = configur.get('rds', 'db_name')
 #
 print(">>opening connection to MySQL server in AWS...")
 
-#dbConn = pymysql.connect(...)
-                             
+dbConn = pymysql.connect(host=rds_endpoint,
+                         port=rds_portnum,
+                         user=rds_username,
+                         passwd=rds_pwd,
+                         database=rds_dbname)
+
 #
 # execute the SQL:
 #
