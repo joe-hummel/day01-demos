@@ -67,6 +67,11 @@ Now build the Docker image by executing this command:
 
   ./docker/build
 
+If you get an error message along the lines of "script blocked by system's
+execution policy", then do the following and try again:
+
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 Finally, to run the image do the following:
 
   ./docker/run
